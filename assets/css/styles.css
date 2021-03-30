@@ -72,7 +72,7 @@ a:hover {
   vertical-align: middle;
 }
 
-/*--/ Sections /--*/
+/*Sections*/
 .sect-pt4 {
   padding-top: 4rem;
 }
@@ -81,14 +81,22 @@ a:hover {
   margin-top: 4rem;
 }
 
-/*--/ Title s /--*/
+/*Title s*/
 .title-s {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
 }
 
-/*--/ Title A /--*/
+.skill-text{
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 0.9rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight:900;
+}
+
+/*Title A*/
 .title-box {
   margin-bottom: 4rem;
 }
@@ -108,11 +116,11 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #0563bb;
   margin: 0 auto;
 }
 
-/*--/ Title Left /--*/
+/*Title Left*/
 .title-box-2 {
   margin-bottom: 3rem;
 }
@@ -126,12 +134,12 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #0563bb;
   width: 100px;
   bottom: -12px;
 }
 
-/*------/ Box /------ CANT BE REMOVED*/
+/*----Box---- CANT BE REMOVED*/
 
 .box-shadow-full {
   padding: 3rem 1.25rem;
@@ -148,7 +156,7 @@ a:hover {
   }
 }
 
-/*------/ Socials /------ CANT BE REMOVED*/
+/*----Socials---- CANT BE REMOVED*/
 .socials {
   padding: 1.5rem 0;
 }
@@ -175,7 +183,7 @@ a:hover {
   transition: all 500ms ease;
 }
 
-/*------/ Ul resect /------ CANT BE REMOVED*/
+/*----Ul resect---- CANT BE REMOVED*/
 .socials ul, .list-ico{
   list-style: none;
   padding-left: 0;
@@ -191,7 +199,7 @@ a:hover {
   margin-right: 10px;
 }
 
-/*------/ Ico Circle /------*/
+/*----Ico Circle----*/
 .ico-circle {
   height: 100px;
   width: 100px;
@@ -204,9 +212,7 @@ a:hover {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*Back to top button*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -237,9 +243,7 @@ a:hover {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*Header*/
 #header {
   transition: all 0.3s;
   z-index: 997;
@@ -267,12 +271,8 @@ a:hover {
   padding: 3px 0;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/*Navigation Menu*/
+/*** Desktop Navigation */
 .navbar {
   padding: 0;
 }
@@ -338,9 +338,7 @@ a:hover {
 }
 
 
-/**
-* Mobile Navigation 
-*/
+/*** Mobile Navigation */
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -406,9 +404,7 @@ a:hover {
 
 
 
-/*--------------------------------------------------------------
-# starter Section
---------------------------------------------------------------*/
+/*starter Section*/
 .starter {
   height: 100vh;
   position: relative;
@@ -449,9 +445,7 @@ a:hover {
 }
 
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*About*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -485,12 +479,10 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #0078ff;
+  background-color: #0563bb;
 }
 
-/*--------------------------------------------------------------
-# Interests
---------------------------------------------------------------*/
+/*Interests*/
 .interest-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
@@ -501,12 +493,12 @@ a:hover {
 
 .interest-box:hover .ico-circle {
   transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
+  color: #fff;  /*changes the colour of the inner icons to white*/
+  background-color: #0563bb;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
-.interest-box .interest-ico {
+.interest-box .interest-ico {   /*gives the inner icons their black colour*/
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
@@ -534,9 +526,7 @@ a:hover {
   color: #4e4e4e;
 }
 
-/*--------------------------------------------------------------
-# Counter
---------------------------------------------------------------*/
+/*Counter*/
 .counter-box {
   color: #fff;
   text-align: center;
@@ -561,9 +551,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/*work*/
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -616,9 +604,7 @@ a:hover {
   font-size: 1.2rem;
 }
 
-/*--------------------------------------------------------------
-# Fancy
---------------------------------------------------------------*/
+/*Fancy*/
 .fancy-box {
   color: #fff;
   text-align: center;
@@ -674,16 +660,13 @@ a:hover {
 }
 
 /*
-Contact Section
-*/
+Contact Section*/
 .penguin{     /*To make the image responsive*/
   width: 100%;
   height: auto;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*Footer*/
 footer {
   text-align: center;
   color: #fff;
@@ -695,105 +678,7 @@ footer .credits {
   margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Merriweather+Sans&display=swap');
-
-
-/* ABOUT ME PAGE */
-
-
-.aboutheading{
-    text-align: left;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.about-heading-font{
-    font-size: 370%;
-    font-family:'IBM Plex Sans', sans-serif;
-
-}
-
-.abouttext{
-text-align: left;
-font-size: 120%;
-font-family: 'Merriweather Sans', sans-serif;
-}
-
-.resume{
-    float: left;
-    background: black;
-    border-color: transparent;
-    color: white;
-    font-size: 125%;
-    letter-spacing: 2px;
-    height: 35%;
-    margin-top: 2%;
-    width:50%
-}
-
-.resume:hover{
-    float: left;
-    background:white;
-    border-color: black;
-    color: black;
-    font-size: 125%;
-    letter-spacing: 2px;
-    height: 35%;
-    margin-top: 2%;
-    cursor: pointer;
-    width:50%
-}
-
-.social-menu{
-    display: flex;
-    margin-top: 7%;
-    font-size: 200%;
-    letter-spacing: 65px;
-}
-
-.abticon {
-    color: black
-}
-
-.abticon:hover{
-    color:#4180CB;
-}
-  
-
-.aboutimage{
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    width: 75%;
-}
-
-
-/* SKILLS PAGE */
+/*SKILLSET SECTION*/
 
 .skill-image{
     width: 200px;
@@ -819,7 +704,7 @@ div.col-md-3.col-sm-4{
 
 
 
-/* MEDIA QUERIES SKILLS PAGE */
+/* MEDIA QUERIES SKILLSET PAGE */
 @media(max-width: 1050px){
     .skill-image{
         padding: 20%;
@@ -841,7 +726,7 @@ div.col-md-3.col-sm-4{
     }
 }
 
-@media(max-width:1107px){ /*DONE BY ME*/
+@media(max-width:1107px){ /*DONE BY ME. Change the padding of the div.row.imagerow when the browser window is 1107px wide or less.*/
   div.row.imagerow{
     padding-left: 5%;
   }
@@ -853,6 +738,9 @@ div.col-md-3.col-sm-4{
   }
   .section.section-light.skillsection{
     padding-left: 7%;
+  }
+  .education-img{   /*to make the image responsive when the width becomes lesser thn 600px.*/
+    width:100%;
   }
 }
 
@@ -905,4 +793,80 @@ div.col-md-3.col-sm-4{
     .skillsection{
         padding: 25px 0 50px 50px ;
     }
+}
+
+
+/*About*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #0563bb;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
 }
