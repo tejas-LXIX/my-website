@@ -325,7 +325,7 @@ a:hover {
   width: 0;
   background-color: #fff;
   visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;  /*the smooth transition of the highlight under the navbar sections. */
 }
 
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {     /*responsible for the underlines beneath the navbar elements (home,about etc.).*/
@@ -343,12 +343,12 @@ a:hover {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
-  display: none;
+  display: none;  /*invisible initially*/
   line-height: 0;
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) {   /*becomes visible when the screen size becomes lesser than 991px*/
   .mobile-nav-toggle {
     display: block;
   }
@@ -359,23 +359,22 @@ a:hover {
 
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 78, 78, 0.9);
-  transition: 0.3s;
+  background: rgba(78, 78, 78, 0.9);  /*behind the navbar */
+  transition: 0.3s;   /*the transition of the navbar (fades in, and the background fades away).*/
   z-index: 999;
 }
 
-.navbar-mobile .mobile-nav-toggle {
+.navbar-mobile .mobile-nav-toggle { /*handles the <i> element. keeps its position fixed on top of the navbar*/
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.navbar-mobile ul {
+.navbar-mobile ul {   /*handles all the ul elements inside the parent with navbar-mobile class. */
   display: block;
   position: absolute;
   top: 55px;
@@ -384,12 +383,6 @@ a:hover {
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
-  visibility: hidden;
 }
 
 .navbar-mobile a {
@@ -398,7 +391,7 @@ a:hover {
   color: #4e4e4e;
 }
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover, .navbar-mobile li:hover > a {
   color: #0078ff;
 }
 

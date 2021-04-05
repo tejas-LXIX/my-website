@@ -63,7 +63,5 @@
 
   //Mobile nav toggle    RESPONSIBLE FOR TOGGLING THE NAVBAR ON THE RIGHT!
   on('click', '.mobile-nav-toggle', function(e) {           
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    select('#navbar').classList.toggle('navbar-mobile') //will add the class navbar-mobile to the whole nav id="navbar" element.
   })
